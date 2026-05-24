@@ -14,10 +14,10 @@ variable "prefix" {
   default     = "globo-dev"
 }
 
-variable environment{
-  type = string
+variable "environment" {
+  type        = string
   description = "(Optional) Environment to use for all resources in this module. Default: dev"
-  default = "JCdev"
+  default     = "JCdev"
 }
 
 variable "cidr_block" {
