@@ -68,7 +68,7 @@ resource "aws_security_group" "ingress" {
     self             = true
     to_port          = 0
   }]
-  name                   = "default"
+  name                   = "${var.prefix}-ingress"
   revoke_rules_on_delete = null
   tags                   = local.common_tags
   tags_all               = {}
